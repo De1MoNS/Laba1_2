@@ -1,0 +1,22 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+public class MainTest
+{
+@Test
+    public void maintest()
+    {
+        String original = "make install";
+        String expected = "llatsni ekam";
+        assertEquals(expected, ReverseString.reverse(original), "Строка не совпадает с ожидаемым значением");
+    }
+    @Test
+    public void maintest1()
+    {
+        assertEquals("", ReverseString.reverse(""), "Пустая строка должна оставаться пустой");
+    }
+    @Test
+    public void maintest2()
+    {
+        assertEquals(null, ReverseString.reverse(null), "Метод должен возвращать null для входного значения null");
+    }
+}
